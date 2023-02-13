@@ -34,6 +34,21 @@ GAME PLAY:
     The second number will be the amount of digits that are in the secret number but in the wrong position
 
     exmaple:
-    (Secret number is 10348)
-    User enters >>    10584
-    Computer says >>  2 2
+    (Secret number is 103487)
+    User enters >>    105843
+    Computer says >>  2 3
+    
+    Since 1 and 0 are in the right position, the first number says 2 
+        (2 digits in the correct position)
+   
+    Since 8, 4, and 3 are in the secret number but in the wrong position, the second number is 3 
+        (3 digits found in the secret number, but in the wrong position)
+
+    6. Once you find the secret number, the computer will display the follwing:
+
+        FOUND <# of iterations it took for you to find the number>
+
+        example: if it takes you 5 rounds to find the number:
+        FOUND 5
+
+        If you cannot find the number after the 100th iteration, the game ends.
