@@ -1,0 +1,39 @@
+MASTERMIND is a game where the user has to guess a generated number.
+THe number can be randomly computer generated or the user can enter a specific number.
+
+RULES OF THE GAME:
+1. The number to be guessed must have no more than 10 digits.
+2. Each digit must be >= 9, and no digit can be repeated.
+
+GAME PLAY:
+1. If you would like to get a computer-generated number, enter the following:
+        
+        "mastermind -r <# of digits>"
+        
+        example:
+        mastermind -r 4
+        
+        The example above generates a 4-digit number, (example: 1234, 2947, etc.)
+
+2. If you would like to provide the number to be guessed yourself, enter the following:
+
+        "mastermind -u <number>
+
+        example:
+        mastermind -u 54762309
+
+3. For computer generated numbers, be sure to add a valid number of digits.
+   For user generated numbers, make sure that the number entered is valid.
+
+4. Once a valid commmand is entered, the game sttarts. You must immediately start guessing the secret number. 
+   You have a maximum of 100 guesses.
+   Make sure that the number you enter when guessing is the correct number of digits.
+
+5. When you enter a guess, the computer will provide you with two numbers:
+    The first number will be the amount of digits in the correct position
+    The second number will be the amount of digits that are in the secret number but in the wrong position
+
+    exmaple:
+    (Secret number is 10348)
+    User enters >>    10584
+    Computer says >>  2 2
