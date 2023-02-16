@@ -27,7 +27,7 @@ int main()
     print_players(team_one, 1);
     print_players(team_two, 2);
 
-    cout << "\nEach team must roll the dice to decide who goes first.\n"
+    cout << "Each team must roll the dice to decide who goes first."
          << endl;
 
     int goes_first = print_roll_dice();

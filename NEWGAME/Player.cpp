@@ -1,6 +1,7 @@
 #include "Player.h"
 #include <string>
 #include <vector>
+#include <ctime>
 #include <iostream>
 
 void get_player_names(std::vector<Player> &team, int numOfPlayers, int teamNumber)
@@ -40,8 +41,14 @@ int print_roll_dice()
     std::cout << "\nTEAM ONE DICE ROLL: \n"
               << team1_dice << std::endl;
 
-    std::cout << "TEAM TWO DICE ROLL: \n"
-              << team2_dice << std::endl;
+    std::cout << "TEAM TWO DICE ROLL: \n";
+
+    // making sure that the dice of the second team is not the same as the first team
+    while (team2_dice == team1_dice)
+    {
+        team2_dice = roll_dice();
+    }
+    std::cout << team2_dice << std::endl;
 
     if (team1_dice > team2_dice)
         return 1;
