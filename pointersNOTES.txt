@@ -1,0 +1,17 @@
+const int *score_ptr 
+        - Value that is being pointed to is constant
+    EXAMPLE
+        *score_ptr = 86        // INVALID
+        score_ptr = &low_score // VALID
+
+int *const score_ptr
+        - pointed address is costant
+    EXAMPLE
+        *score_ptr = 86        // VALID
+        score_ptr = &low_score // INVALID
+
+const int *const score_ptr 
+        - everything is constant
+    EXAMPLE
+        *score_ptr = 86        // INVALID
+        score_ptr = &low_score // INVALID

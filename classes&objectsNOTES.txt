@@ -1,0 +1,59 @@
+CLASSES
+    - Blueprint from which objects are created
+    - User-defined data type
+    - Has attributes (data)
+    - Has methods (functions)
+    - can hide data and methods
+    - provides a public interface
+
+    EXAMPLES OF CLASSES
+    - Account
+    - Employee
+    - Image
+    - std::vector
+    - std::string
+
+
+OBJECTS 
+    - Created from classes 
+    - represents a specific instance of a class 
+    - can create many objects
+    - each has its own identity
+    - each can use the defined class method 
+
+    EXAMPLES OF OJBJECTS (Account class)
+    - Duru's account is an instance of an Account
+    - Ulan's account is an instance of an Account
+    - Each account has its own balance, can make deposits, 
+      withdrawals, etc...
+
+DECLARING A CLASS AND CREATING OBJECTS
+
+class Class_Name
+{
+    // declarations
+}
+
+example:
+class Player
+{
+    // attributes
+    std::string name;
+    int health;
+    int xp;
+
+    // methods
+    void talk(std::string text_to_say);
+    bool is_dead();
+}
+
+Player duru;
+Player hero;
+
+// creating a player using a pointer and dynamic memory
+Player *enemy = new Player();
+delete enemy;
+
+// creating an array/vector of a class objects
+vector<Player> team_one {duru};
+players1.push_back(hero);
