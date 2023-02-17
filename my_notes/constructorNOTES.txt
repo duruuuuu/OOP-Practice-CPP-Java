@@ -1,0 +1,33 @@
+CONSTRUCTORS
+    - Special member method
+    - invoked during object creation
+    - useful for initialization
+    - same name as the class
+    - no return type is specified
+    - can be overloaded
+
+
+    DESTRUCTOR
+        - Special member method 
+        - Same name as teh class proceeded with a tilde (~)
+        - Invoked automatically when an object is destroyed
+        - No return type and no parameters
+        - Only 1 destructor is allowed per class [CANNOT BE OVERLOADED!]
+        - Useful to release memory and other resources
+
+        EXAMPLE (for Player Class)
+
+    class Player
+    {
+    public:
+        // Overloaded constructors 
+        Player();
+        Player(std::string name);
+        Player(std::string name, int health);
+
+        // destructor
+        ~Player();
+    }
+
+    *Destructor is called when you use the delete fxn
+    *IDE provides default, empty constructors and destructor if you do not write one yourself
