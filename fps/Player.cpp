@@ -4,6 +4,8 @@
 #include <ctime>
 #include <iostream>
 
+int Player::num_players = 4;
+
 void get_player_names(std::vector<Player> &team, int numOfPlayers, int teamNumber)
 {
     std::string nameHolder;

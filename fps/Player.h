@@ -9,6 +9,7 @@ private:
     std::string name;
     int health{100};
     int bullets{7};
+    static int num_players;
 
 public:
     // constructors
