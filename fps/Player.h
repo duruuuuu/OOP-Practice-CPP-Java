@@ -13,8 +13,15 @@ private:
 
 public:
     // constructors
-    Player() {}
-    Player(std::string n) { n = name; }
+    Player()
+        : name{"none"}, health{100}, bullets{7}
+    {
+    }
+    Player(std::string n)
+        : name{"none"}, health{100}, bullets{7}
+    {
+        n = name;
+    }
 
     // destructor
     ~Player() { --num_players; }
