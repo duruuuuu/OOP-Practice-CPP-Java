@@ -16,6 +16,9 @@ public:
     Player() {}
     Player(std::string n) { n = name; }
 
+    // destructor
+    ~Player() { --num_players; }
+
     // methods
     bool is_dead()
     {
