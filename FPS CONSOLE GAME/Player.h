@@ -11,6 +11,10 @@ private:
     int bullets{7};
 
 public:
+    // constructors
+    Player() {}
+    Player(std::string n) { n = name; }
+
     // methods
     bool is_dead()
     {
