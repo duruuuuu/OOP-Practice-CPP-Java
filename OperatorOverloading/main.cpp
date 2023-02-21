@@ -11,6 +11,9 @@ int main()
 
     b = "This is a test";
 
+    Mystring a = Mystring{"Hola"};
+    a = "Bonjour";
+
     /*Mystring empty;           // no-args constructor
     Mystring java("Java");    // overloaded constructor
     Mystring cPlusPlus(java); // copy constructor
