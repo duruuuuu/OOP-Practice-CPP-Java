@@ -25,7 +25,7 @@ ostream &operator<<(ostream &stream, const Vector2 &other)
 int main()
 {
     ////////////* Mystring functions *//////////////
-    /*Mystring a{"Hello"}; // pverloaded constrctor
+    Mystring a{"Hello"}; // pverloaded constrctor
     Mystring b;          // no-args constructor
     b = a;               // copy assignment
 
@@ -34,13 +34,13 @@ int main()
     Mystring a = Mystring{"Hola"};
     a = "Bonjour";
 
-Mystring empty;           // no-args constructor
+    Mystring empty;           // no-args constructor
     Mystring java("Java");    // overloaded constructor
     Mystring cPlusPlus(java); // copy constructor
 
     empty.display();
     java.display();
-    cPlusPlus.display();*/
+    cPlusPlus.display();
 
     //////////////////* Vector2 Struct functions *///////////////////////
 
