@@ -30,7 +30,7 @@ int input_error_checking(int n)
 {
     if (n > 9 || n < 1)
     {
-        cout << "Please enter a valid number length. It cannot be more than 9, or less than 1" << endl;
+        cerr << "Please enter a valid number length. It cannot be more than 9, or less than 1" << endl;
         return 1;
     }
 
@@ -43,7 +43,7 @@ int input_error_checking(string s)
 {
     if (s.at(0) == '0')
     {
-        cout << "Please enter a valid secret number. (Leftmost digit cannot be 0.)" << endl;
+        cerr << "Please enter a valid secret number. (Leftmost digit cannot be 0.)" << endl;
         return 1;
     }
 
@@ -56,7 +56,7 @@ int input_error_checking(string s)
             {
                 if (s.at(i) == s.at(j))
                 {
-                    cout << "Please enter a valid number. (The number cannot contain repeating digits.)" << endl;
+                    cerr << "Please enter a valid number. (The number cannot contain repeating digits.)" << endl;
                     flag = 1;
                     break;
                 }
@@ -77,7 +77,7 @@ bool input_error_checking(size_t length1, size_t length2)
 {
     if (length1 != length2)
     {
-        cout << "E1" << endl;
+        cerr << "E1" << endl;
         return false;
     }
 
