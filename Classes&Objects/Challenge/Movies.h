@@ -16,7 +16,7 @@ public:
 
     bool add_movie(std::string name, std::string rating, long int watched);
     bool increment_watched(std::string name);
-    void display const();
+    void display() const;
 };
 
 #endif // _MOVIES_H_

@@ -20,4 +20,8 @@ int main()
     add_movie(my_movies, "The Holiday", "PG-13", 7);
     add_movie(my_movies, "The Ugly Truth", "R", 1);
     add_movie(my_movies, "21 Dresses", "PG-13", 3);
+
+    my_movies.display();
+
+    return 0;
 }

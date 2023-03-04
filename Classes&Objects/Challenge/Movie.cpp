@@ -20,4 +20,5 @@ Movie::~Movie() {}
 // Implementation of display method
 void Movie::display() const
 {
+    std::cout << name << ", " << rating << ", " << numberOfWatches << std::endl;
 }
